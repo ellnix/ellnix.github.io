@@ -7,10 +7,29 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+theme = "apollo"
+
+title = "~ellnix"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+theme = "toggle"
+socials = [
+    { name = "github", url = "https://github.com/ellnix/", icon = "github" },
+    { name = "fosstodon", url = "https://fosstodon.org/@ellnix", icon = "mastodon" },
+
+    { name = "gitlab", url = "https://gitlab.com/ellnix/", icon = "gitlab" },
+    { name = "gnome gitlab", url = "https://gitlab.gnome.org/ellnix/", icon = "gnome" },
+    { name = "sourcehut", url = "https://sr.ht/~ellnix/", icon = "srht" },
+    { name = "exercism", url = "https://exercism.org/profiles/ellnix", icon = "exercism" },
+    { name = "leetcode", url = "https://leetcode.com/u/ellnix/", icon = "leetcode" },
+]
+
+menu = [
+    { name = "/blog", url = "/blog", weight = 1 },
+]
+
